@@ -8,7 +8,7 @@ import firebase from "firebase"
 Vue.config.productionTip = false
 
 
-
+  
   {/* // Your web app's Firebase configuration */}
   const firebaseConfig = {
     apiKey: "AIzaSyBvCmmynnbyayJHPmXEzlQ8TsoJDYJ1NHA",
@@ -19,6 +19,8 @@ Vue.config.productionTip = false
     messagingSenderId: "10204680750",
     appId: "1:10204680750:web:0880fd07683244e0"
   };
+
+  firebase.initializeApp(firebaseConfig)
 
 new Vue({
   router,
